@@ -125,7 +125,6 @@ CREATE USER IF NOT EXISTS 'engineer'@'localhost' IDENTIFIED BY 'eng_pass';
 CREATE USER IF NOT EXISTS 'head_of_it'@'localhost' IDENTIFIED BY 'head_pass';
 CREATE USER IF NOT EXISTS 'analyst'@'localhost' IDENTIFIED BY 'anl_pass';
 
--- ✅ ИСПРАВЛЕНО: везде используется service_desk_laba5 вместо service_desk
 GRANT SELECT ON service_desk_laba5.work_types TO 'engineer'@'localhost';
 GRANT SELECT, INSERT, UPDATE ON service_desk_laba5.records TO 'engineer'@'localhost';
 
